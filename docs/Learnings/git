@@ -1,0 +1,19 @@
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sakalesha/SkillSync.git
+git push -u origin main
+
+
+Stage the changed files:
+git add .
+This stages all the new and modified files for commit.
+
+Commit the changes:
+git commit -m "your descriptive commit message"
+Replace the message inside the quotes with a clear description of your changes (e.g., "added checklist.md" or "updated dashboard component").
+
+Push to GitHub:
+git push
+This command uploads your latest commits to the default branch (“main”) on your GitHub remote repository.
