@@ -6,6 +6,8 @@ git remote add origin https://github.com/sakalesha/SkillSync.git
 git push -u origin main
 
 
+Update github repo 
+
 Stage the changed files:
 git add .
 This stages all the new and modified files for commit.

@@ -1,0 +1,7 @@
+React Router DOM enables client-side routing in React, letting your app have multiple “pages” without full page reloads.
+
+Use <BrowserRouter> to wrap your app, <Routes> to define routes, <Route path="..." element={...} /> to map URLs to components, and <Link to="..."> to navigate between pages.
+
+Supports nested routes, dynamic routes, and programmatic navigation.
+
+Provides a smooth SPA experience, faster navigation, and state preservation.
