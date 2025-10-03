@@ -19,7 +19,7 @@
 - [ ] **Frontend Foundation (3 hrs)**
   - [X] Create React app with routing (react-router-dom)
   - [X] Build header/footer components
-  - [ ] Create home page with project description
+  - [X] Create home page with project description
 
 ### Week 2-2.5 (Deadline: Oct 19, 15 hours)
 - [ ] **UI Components Development (8 hrs)**
