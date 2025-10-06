@@ -5,14 +5,15 @@ const userRoutes = require('./routes/UserRoutes.js');
 const jobRoutes = require('./routes/JobRoutes.js');
 const skillGapRoutes = require('./routes/SkillGapRoutes.js');
 const analyticsRoutes = require('./routes/AnalyticsRoutes.js');
-
 const cors = require('cors');
-app.use(cors());
 
 dotenv.config();
 connectDB();
 
-const app = express();
+const app = express(); // <-- must be before any app.use()
+
+// Middleware
+app.use(cors());
 app.use(express.json()); // Body parser
 
 // Routes
