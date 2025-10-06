@@ -6,6 +6,9 @@ const jobRoutes = require('./routes/JobRoutes.js');
 const skillGapRoutes = require('./routes/SkillGapRoutes.js');
 const analyticsRoutes = require('./routes/AnalyticsRoutes.js');
 
+const cors = require('cors');
+app.use(cors({ origin: 'http://localhost:3000' }));
+
 dotenv.config();
 connectDB();
 

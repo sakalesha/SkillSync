@@ -36,3 +36,26 @@ project-name/
 ├── .env                    # Environment variables
 ├── .gitignore              # Git ignore rules
 └── README.md               # Project documentation
+
+
+intigrate backend with frontend
+
+Run and test your backend APIs. - done
+
+Install Axios in the frontend (npm install axios). - done
+
+Set backend URL in a .env file. -done
+
+Create an Axios instance with base URL and headers.
+
+Write functions to call backend APIs using Axios.
+
+Call these functions in React components.
+
+Enable CORS in the backend for frontend requests.
+
+Attach authentication headers if needed.
+
+Deploy backend and frontend, updating URLs.
+
+Optionally, serve frontend from backend static files.
