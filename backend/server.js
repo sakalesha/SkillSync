@@ -7,7 +7,7 @@ const skillGapRoutes = require('./routes/SkillGapRoutes.js');
 const analyticsRoutes = require('./routes/AnalyticsRoutes.js');
 
 const cors = require('cors');
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors());
 
 dotenv.config();
 connectDB();
