@@ -1,0 +1,38 @@
+Set up project - done
+
+Connect to database - done
+
+Implement CRUD operations - done
+
+Add routing & modular structure - done
+
+Add authentication & authorization
+
+Handle validation & errors 
+
+Test backend - done
+
+Deploy backend
+
+Connect to frontend
+
+
+
+
+project-name/
+│
+├── src/                   # Source files
+│   ├── controllers/       # Request handlers / business logic
+│   ├── models/            # Database schemas / ORM models
+│   ├── routes/            # API route definitions
+│   ├── middleware/        # Auth, error handling, logging, etc.
+│   ├── utils/             # Helper functions / utilities
+│   ├── config/            # Database & environment configuration
+│   ├── services/          # Optional: extra business logic, APIs
+│   └── app.js             # Main app / server setup
+│
+├── tests/                 # Unit & integration tests
+├── package.json            # Node.js dependencies & scripts
+├── .env                    # Environment variables
+├── .gitignore              # Git ignore rules
+└── README.md               # Project documentation

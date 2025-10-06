@@ -1,0 +1,22 @@
+1. ✅ **Virtual in Mongoose:**
+A virtual field is **not stored in MongoDB** but is **computed dynamically** from existing data.
+
+Example:
+
+```js
+userSchema.virtual('fullName').get(function() {
+  return `${this.firstName} ${this.lastName}`;
+});
+```
+
+Here, `fullName` combines `firstName` and `lastName`.
+
+To include virtuals in JSON responses:
+
+```js
+userSchema.set('toJSON', { virtuals: true });
+userSchema.set('toObject', { virtuals: true });
+```
+
+
+2. In Mongoose middleware, next is a callback function that tells Mongoose to move to the next step in the process.

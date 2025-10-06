@@ -24,16 +24,16 @@
 ### Week 2-2.5 (Deadline: Oct 19, 15 hours)
 - [ ] **UI Components Development (8 hrs)**
   - [ ] Registration/Login forms (React components)
-  - [ ] Skill input form (Technical, Soft, Educational)
-  - [ ] Job listing card component
-  - [ ] Responsive design with CSS/Bootstrap
+  - [X] Skill input form (Technical, Soft, Educational)
+  - [X] Job listing card component
+  - [X] Responsive design with CSS/Bootstrap
 - [ ] **Static Data & Navigation (4 hrs)**
   - [ ] Create sample job data (50+ listings in JSON)
-  - [ ] Implement navigation between pages
-  - [ ] Form validation (client-side)
+  - [X] Implement navigation between pages
+  - [X] Form validation (client-side)
 - [ ] **Frontend Testing & Polish (3 hrs)**
-  - [ ] Test forms and navigation
-  - [ ] Fix responsive design issues
+  - [X] Test forms and navigation
+  - [X] Fix responsive design issues
   - [ ] Prepare for backend integration
 
 ---
