@@ -1,4 +1,5 @@
 const User = require('../models/UserModel.js');
+const { calculateEmployabilityScore, countJobApplications, countCoursesCompleted } = require('../services/UserMetrics.js');
 
 // CREATE User
 exports.createUser = async (req, res) => {
@@ -53,5 +54,26 @@ exports.deleteUser = async (req, res) => {
     res.status(200).json({ success: true, data: {} });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
+  }
+};
+
+exports.getUserByIdWithMetrics = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id).lean(); // .lean() to get plain object
+    if (!user) return res.status(404).json({ message: 'User not found' });
+
+    const employabilityScore = calculateEmployabilityScore(user);
+    const jobApplications = countJobApplications(user);
+    const coursesCompleted = countCoursesCompleted(user);
+
+    res.json({
+      ...user,
+      employabilityScore,
+      jobApplications,
+      coursesCompleted
+    });
+  } catch (error) {
+    console.error('Error fetching user with metrics:', error);
+    res.status(500).json({ message: 'Server error' });
   }
 };

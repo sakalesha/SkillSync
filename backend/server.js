@@ -5,6 +5,7 @@ const userRoutes = require('./routes/UserRoutes.js');
 const jobRoutes = require('./routes/JobRoutes.js');
 const skillGapRoutes = require('./routes/SkillGapRoutes.js');
 const analyticsRoutes = require('./routes/AnalyticsRoutes.js');
+const authRoutes = require('./routes/AuthRoutes.js');
 const cors = require('cors');
 
 dotenv.config();
@@ -17,6 +18,7 @@ app.use(cors());
 app.use(express.json()); // Body parser
 
 // Routes
+app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/skill-gap', skillGapRoutes);
